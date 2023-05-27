@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READ MORE BUTTON</title>
+    
+    
+     <style>
+        .bor{
+            box-shadow: 2px 2px 5px red;
+            
+            border-radius: 10px;
+            border: 1px solid black;
+            height: 170px;
+            padding-left: 18px;
+            padding-right: 20px;
+            background-color: grey;
+            
+        }
+        .border{
+            border: 1px solid black;
+            height: 20px;
+            padding-left: 225px;
+             padding-right: 0px;
+            margin-left: 0px;  
+            border-radius: 10px;
+            width: 715px;
+            margin-top: -1px;
+            background-color: brown;
+            color: white;
+        }
+        #invisible{
+            display: none;
+        }
+        .contain{
+            box-shadow: 2px 2px 5px red;
+            border-radius: 10px;
+            border: 1px solid black;
+            height: 170px;
+            padding-left: 18px;
+            padding-right: 20px;
+            background-color: grey;
+           
+        }
+        .container{
+
+            border: 1px solid black;
+            height: 20px;
+            padding-left: 225px;
+             padding-right: 0px;
+            margin-left: 0px;  
+            border-radius: 10px;
+            width: 715px;
+            margin-top: -1px;
+            background-color: brown;
+            color: white;
+        }
+        #invi{
+          
+            display: none;
+        }
+        
+    </style> 
+</head>
+<body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8W-n7q0vGJZ4bt0GGN8YlFazpnGw3Xj93uSDiz2yJ&s);background-size: cover;background-color:darkgoldenrod;">
+    <h2 style="color: black;margin-left: 190px;text-shadow: 2PX 2PX 5px red">**READ MORE AND READ LESS USING (JAVA SCRIPT)**</h2>
+    <div class="bor">
+    <h3 class="border" style="color:white;box-shadow:  2px 5px rgb(70, 23, 23),">THIS IS THE FIRST CONTENT</h3>
+    <P style="color:black "  id="para">
+        " UMME AIMAN KHAN I am 17 years old.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dicta molestias, voluptatibus enim minus distinctio amet quis ipsam, doloremque magnam nobis necessitatibus doloribus facilis fugit dolores. Sunt alias porro dolor?""<span id="dots">...</span>
+        <span id="invisible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quisquam assumenda odit incidunt inventore cupiditate voluptate, unde alias pariatur expedita, consequuntur quod sit amet ipsa, sed ipsam maxime eos!</span>
+        <br>
+        <br>
+        <button  id="btn"style="margin-left: 350px;background-color: brown;color: whitesmoke;border-radius: 10px;"   href="javascript:void(0);"onClick="aiman()">READ MORE</button>
+       
+    </P>
+</div>
+
+
+
+
+
+
+
+<div class="contain">
+    <h3 class="container" style="color:white;box-shadow:  2px 5px rgb(70, 23, 23),">THIS IS THE SECOND CONTENT</h3>
+    <P style="color:black "  id="para">
+        The statement declared: No constitutional plan would be workable or acceptable to the Muslims unless geographical contiguous units are demarcated into regions which should be so constituted with such territorial readjustments as may be necessary.<span id="comma">...</span>
+        <span id="invisi">The Lahore Resolution (Urdu=Qarardad-e-Lahore قرارداد لاھور), commonly known as the Pakistan Resolution (Urdu=قرارداد پاکستان Qarardad-e-Pakistan) was a political resolution, or statement drafted between 22nd to 24th March 1940, by the 25-member Working Committee of the All-India Muslim League, and then formally ...</span>
+        <br>
+        <br>
+        <button  id="button"style="margin-left: 350px;background-color: brown;color: whitesmoke;border-radius: 10px;"   href="javascript:void(0);"onClick="aroma()">READ MORE</button>
+       
+    </P>
+</div>
+
+         <script>
+            function aiman(){
+         var dots=document.getElementById("dots") ;
+         var invisible=document.getElementById("invisible");
+         var btntext=document.getElementById("btn");
+         if(dots.style.display!="none"){
+            dots.style.display="none";
+            invisible.style.display="inline";
+            btntext.innerHTML="READ LESS";
+         }
+         else{
+            dots.style.display="inline";
+            invisible.style.display="none";
+            btntext.innerHTML="READ MORE"
+
+         }
+        }
+        function aroma(){
+
+var a=document.getElementById("comma");
+var b=document.getElementById("invisi");
+document.getElementById("button");
+if(comma.style.display!="none"){
+    comma.style.display="none";
+    invisi.style.display="inline";
+    button.innerHTML="READ LESS"
+}
+else{
+    comma.style.display="inline";
+            invisi.style.display="none";
+            button.innerHTML="READ MORE"
+
+}
+
+
+        }
+
+        
+
+       
+        
+    </script>
+    
+</body>
+</html>
